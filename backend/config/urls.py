@@ -7,12 +7,15 @@ from drf_spectacular.views import (
     SpectacularSwaggerView,
 )
 
+from apps.accounts.views import MeView
+
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/auth/", include("apps.accounts.urls", namespace="auth")),
-    path("api/", include("apps.shows.urls", namespace="shows")),
-    path("api/", include("apps.tracking.urls", namespace="tracking")),
-    path("api/", include("apps.social.urls", namespace="social")),
+    path("api/auth/", include("apps.accounts.urls")),
+    path("api/me/", MeView.as_view(), name="me"),
+    path("api/", include("apps.shows.urls")),
+    path("api/", include("apps.tracking.urls")),
+    path("api/", include("apps.social.urls")),
     # API schema docs
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     path(
