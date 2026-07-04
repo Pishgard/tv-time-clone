@@ -5,36 +5,30 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Star } from "lucide-react";
 import { cn, getTMDBImage, formatDate } from "@/lib/utils";
+import type { ShowSummary } from "@/lib/types";
 
 interface ShowCardProps {
-  show: {
-    id: number;
-    tmdb_id?: number | null;
-    title: string;
-    poster_path?: string;
-    poster_url?: string;
-    backdrop_url?: string;
-    rating?: number;
-    first_air_date?: string;
-    status?: string;
-    genres?: string[] | { id: number; name_en: string; name_fa: string }[];
-  };
+  show: ShowSummary;
   className?: string;
 }
 
 export function ShowCard({ show, className }: ShowCardProps) {
   const t = useTranslations("show");
   const locale = useLocale();
-  const href = `/${locale}/show/${show.tmdb_id || show.id}${show.tmdb_id ? "?tmdb=1" : ""}`;
+  const href = `/${locale}/show/${show.tmdb_id || show.id}${
+    show.tmdb_id ? "?tmdb=1" : ""
+  }`;
 
   const posterSrc =
     show.poster_url ||
     (show.poster_path ? getTMDBImage(show.poster_path) : "/placeholder-poster.svg");
 
   const genreNames = Array.isArray(show.genres)
-    ? show.genres.map((g: string | { name_en: string; name_fa: string }) =>
-        typeof g === "string" ? g : locale === "fa" ? g.name_fa : g.name_en
-      ).slice(0, 2)
+    ? show.genres
+        .map((g: string | { name_en: string; name_fa: string }) =>
+          typeof g === "string" ? g : locale === "fa" ? g.name_fa : g.name_en,
+        )
+        .slice(0, 2)
     : [];
 
   return (

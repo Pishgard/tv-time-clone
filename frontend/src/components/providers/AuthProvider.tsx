@@ -8,6 +8,13 @@ interface AuthContextType {
   tokens: Tokens | null;
   isLoading: boolean;
   login: (email: string, password: string) => Promise<void>;
+  register: (data: {
+    username: string;
+    email: string;
+    password: string;
+    password2: string;
+    preferred_language: string;
+  }) => Promise<void>;
   logout: () => void;
   updateUser: (data: Partial<User>) => Promise<void>;
 }
@@ -15,7 +22,7 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | null>(null);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const { user, tokens, isLoading, login, logout, updateUser, loadFromStorage } =
+  const { user, tokens, isLoading, login, register, logout, updateUser, loadFromStorage } =
     useAuthStore();
 
   useEffect(() => {
@@ -24,7 +31,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <AuthContext.Provider
-      value={{ user, tokens, isLoading, login, logout, updateUser }}
+      value={{ user, tokens, isLoading, login, register, logout, updateUser }}
     >
       {children}
     </AuthContext.Provider>
