@@ -1,0 +1,106 @@
+{
+  "common": {
+    "appName": "تی‌وی تایم",
+    "loading": "در حال بارگذاری…",
+    "error": "مشکلی پیش آمد.",
+    "retry": "تلاش مجدد",
+    "save": "ذخیره",
+    "cancel": "لغو",
+    "delete": "حذف",
+    "edit": "ویرایش",
+    "search": "جستجو",
+    "back": "بازگشت",
+    "home": "خانه",
+    "login": "ورود",
+    "register": "ثبت‌نام",
+    "logout": "خروج",
+    "darkMode": "تیره",
+    "lightMode": "روشن"
+  },
+  "nav": {
+    "dashboard": "داشبورد",
+    "discover": "کاوش",
+    "search": "جستجو",
+    "stats": "آمار",
+    "activity": "فعالیت‌ها",
+    "profile": "پروفایل"
+  },
+  "auth": {
+    "loginTitle": "خوش آمدید",
+    "loginSubtitle": "وارد شوید تا پیگیری سریال‌ها رو ادامه بدید.",
+    "registerTitle": "حساب جدید بسازید",
+    "registerSubtitle": "همین امروز پیگیری سریال‌های مورد علاقه‌تون رو شروع کنید.",
+    "email": "ایمیل",
+    "username": "نام کاربری",
+    "password": "رمز عبور",
+    "confirmPassword": "تکرار رمز عبور",
+    "language": "زبان ترجیحی",
+    "noAccount": "حساب ندارید؟",
+    "hasAccount": "قبلاً حساب دارید؟",
+    "loginBtn": "ورود",
+    "registerBtn": "ثبت‌نام",
+    "emailRequired": "ایمیل الزامی است.",
+    "passwordMin": "رمز عبور حداقل ۸ کاراکتر باشد.",
+    "passwordMatch": "رمزهای عبور مطابقت ندارند."
+  },
+  "dashboard": {
+    "title": "داشبورد من",
+    "watching": "در حال تماشا",
+    "completed": "تماشا شده",
+    "planToWatch": "قصد تماشا",
+    "dropped": "رها شده",
+    "continueWatching": "ادامه تماشا",
+    "recentlyWatched": "اخیراً تماشا شده",
+    "noShows": "هنوز سریالی اینجا نیست. کاوش رو شروع کنید!"
+  },
+  "discover": {
+    "title": "کاوش",
+    "popular": "محبوب",
+    "trending": "پرطرفدار",
+    "topRated": "بالاترین امتیاز",
+    "addToWatchlist": "افزودن به لیست تماشا"
+  },
+  "show": {
+    "seasons": "فصل‌ها",
+    "episodes": "قسمت‌ها",
+    "overview": "خلاصه",
+    "cast": "بازیگران",
+    "similar": "سریال‌های مشابه",
+    "addToList": "افزودن به لیست",
+    "markWatched": "علامت‌گذاری تماشا شده",
+    "unmarkWatched": "حذف علامت",
+    "status": "وضعیت",
+    "rating": "امتیاز",
+    "firstAired": "تاریخ پخش",
+    "genres": "ژانرها",
+    "season": "فصل",
+    "episode": "قسمت"
+  },
+  "stats": {
+    "title": "آمار من",
+    "episodesWatched": "قسمت‌های تماشا شده",
+    "totalHours": "ساعت کل",
+    "showsWatching": "در حال تماشا",
+    "showsCompleted": "تماشا شده",
+    "showsPlanned": "قصد تماشا",
+    "topGenres": "ژانرهای محبوب"
+  },
+  "social": {
+    "title": "فعالیت‌ها",
+    "writeComment": "نظر بنویسید…",
+    "comment": "نظر",
+    "like": "لایک",
+    "follow": "دنبال کردن",
+    "unfollow": "لغو دنبال",
+    "followers": "دنبال‌کنندگان",
+    "following": "دنبال‌شوندگان",
+    "spoiler": "حاوی اسپویلر",
+    "noActivity": "هنوز فعالیتی نیست. چند کاربر رو دنبال کنید!"
+  },
+  "profile": {
+    "editProfile": "ویرایش پروفایل",
+    "bio": "بیوگرافی",
+    "watchlist": "لیست تماشا",
+    "noBio": "بیوگرافی هنوز ثبت نشده."
+  }
+}

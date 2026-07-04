@@ -1,0 +1,106 @@
+{
+  "common": {
+    "appName": "TV Time",
+    "loading": "Loading…",
+    "error": "Something went wrong.",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "back": "Back",
+    "home": "Home",
+    "login": "Log In",
+    "register": "Sign Up",
+    "logout": "Log Out",
+    "darkMode": "Dark",
+    "lightMode": "Light"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "discover": "Discover",
+    "search": "Search",
+    "stats": "Stats",
+    "activity": "Activity",
+    "profile": "Profile"
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to continue tracking your shows.",
+    "registerTitle": "Create an account",
+    "registerSubtitle": "Start tracking your favourite shows today.",
+    "email": "Email",
+    "username": "Username",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "language": "Preferred Language",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "loginBtn": "Sign In",
+    "registerBtn": "Create Account",
+    "emailRequired": "Email is required.",
+    "passwordMin": "Password must be at least 8 characters.",
+    "passwordMatch": "Passwords do not match."
+  },
+  "dashboard": {
+    "title": "My Dashboard",
+    "watching": "Watching",
+    "completed": "Completed",
+    "planToWatch": "Plan to Watch",
+    "dropped": "Dropped",
+    "continueWatching": "Continue Watching",
+    "recentlyWatched": "Recently Watched",
+    "noShows": "No shows here yet. Start exploring!"
+  },
+  "discover": {
+    "title": "Discover",
+    "popular": "Popular",
+    "trending": "Trending",
+    "topRated": "Top Rated",
+    "addToWatchlist": "Add to Watchlist"
+  },
+  "show": {
+    "seasons": "Seasons",
+    "episodes": "Episodes",
+    "overview": "Overview",
+    "cast": "Cast",
+    "similar": "Similar Shows",
+    "addToList": "Add to List",
+    "markWatched": "Mark as Watched",
+    "unmarkWatched": "Unmark",
+    "status": "Status",
+    "rating": "Rating",
+    "firstAired": "First Aired",
+    "genres": "Genres",
+    "season": "Season",
+    "episode": "Episode"
+  },
+  "stats": {
+    "title": "My Stats",
+    "episodesWatched": "Episodes Watched",
+    "totalHours": "Total Hours",
+    "showsWatching": "Shows Watching",
+    "showsCompleted": "Shows Completed",
+    "showsPlanned": "Shows Planned",
+    "topGenres": "Top Genres"
+  },
+  "social": {
+    "title": "Activity Feed",
+    "writeComment": "Write a comment…",
+    "comment": "Comment",
+    "like": "Like",
+    "follow": "Follow",
+    "unfollow": "Unfollow",
+    "followers": "Followers",
+    "following": "Following",
+    "spoiler": "Contains spoiler",
+    "noActivity": "No activity yet. Follow some users!"
+  },
+  "profile": {
+    "editProfile": "Edit Profile",
+    "bio": "Bio",
+    "watchlist": "Watchlist",
+    "noBio": "No bio yet."
+  }
+}
